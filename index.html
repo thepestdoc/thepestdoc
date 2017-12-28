@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>The Pest Doc</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./pesto_files/w3.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./pesto_files/css">
+    <link rel="stylesheet" href="./pesto_files/css(1)">
+    <link rel="stylesheet" href="./pesto_files/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* Create two equal columns that floats next to each other */
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 170px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /*
+@media (max-width: 600px) {
+    .advantage{
+      float: left;
+        width: auto;
+        height: auto;
+    }
+}*/
+
+        #content {
+            text-align: center;
+        }
+
+        #content ul {
+            text-align: left;
+            display: inline-block;
+            font-size: 130%;
+            list-style-type: square;
+            margin: 20px auto;
+        }
+
+
+        .w3-image {
+            background-image: url('./images/cover.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            
+            max-height:100vh;
+            background-size: cover;
+            overflow: hidden;
+            opacity: 0.7;
+        }
+
+        
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar on large screen-->
+
+    <!-- <<div class="w3-top">
+        <div class="w3-bar  w3-card w3-right-align w3-small w3-white">
+            <!--  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>-->
+
+    <!--  <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Details</a>-->
+    <!-- <a href="tel:080-43702933" class="w3-bar-item w3-button w3-padding-large w3-white">Call 080-43702933</a>-->
+
+
+    <!-- Navbar on small screens
+        
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+    </div>-->
+    <!--  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Conatct</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">The Pest Doc</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:080-43702933" class="nav-link">Call 080-43702933</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="w3-container  w3-image w3-center">
+        <section class="center">
+            <h1 class="w3-jumbo">The Pest Doc.
+                <img src="./images/pesto-logo.png" alt="Pesto Doc" style="width:49px;height:79px;"></h1>
+            <p class="w3-xlarge">The Pest Doc pest control management service Est. since 2010 is a leading pest service provider in Cockroach, Bedbug, Mosquito, Wood Borer, Termites, Bird nest protection and other general pest control service. We take pride in the fact that no one knows pests the way we do. “The Pest Doc” network and expertise is unparalleled.</p>
+        </section>
+    </header>
+
+    <!-- First Grid -->
+    <!-- <div class="w3-row-padding w3-padding-64 w3-container">
+        <div>
+            <h1 class="w3-container w3-center">Cockroach Treatment<img class="logo" src="./images/Cockroach.png" alt="Pesto Doc"></h1>
+            <div class="row">
+                <div class="column" style="background: linear-gradient(to right, #ffff99 0%, #ccffff 100%);">
+                    <h2>Service Details</h2>
+                    <ul>
+                        <li>Herbal gel is applied at the most suspected areas.</li>
+                        <li>An odourless and harmless herbal liquid is put as a spot spray on the floor.</li>
+                    </ul>
+                </div>
+                <div class="column" style="background: linear-gradient(to left, #ffff99 0%, #ccffff 100%);">
+                    <h2>Benefits</h2>
+
+                    <ul>
+                        <li> This treatment will clear all the roaches from your hotel within a day, A completely odourless, hassle-free and safe solution for kitchen staff and food production.</li>
+                        <li> No need to empty out your kitchen, hence very convenient.</li>
+                    </ul>
+                </div>
+            </div>-->
+    <br>
+
+    <div class="w3-container w3-center">
+        <img class="img-fluid rounded" src="./images/insects.png" alt="Insects">
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2>Cockroach Treatment</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Service Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Benefits</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <ul>
+                    <li>Herbal gel is applied at the most suspected areas.</li>
+                    <li>An odourless and harmless herbal liquid is put as a spot spray on the floor.</li>
+                </ul>
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+                <ul>
+                    <li> This treatment will clear all the roaches from your hotel within a day, A completely odourless, hassle-free and safe solution for kitchen staff and food production.</li>
+                    <li> No need to empty out your kitchen, hence very convenient.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--start-->
+        <h2>Bed Bugs Control</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home1">Service Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Benefits</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home1" class="container tab-pane active"><br>
+                <ul>
+                    <li>Experts do a thorough inspection of hiding spots of bed bugs and inject the areas with advanced chemicals.</li>
+                    <li>An odourless and harmless herbal liquid is put as a spot spray on the floor.</li>
+                    <li>We use vacuum cleaner to clear all the bugs from the bed.</li>
+                </ul>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <ul>
+                    <li> It is highly effective and completely controls infestation of Bed bugs at guest room ensuring no bed bugs are found in the infected places post treatment.</li>
+                    <li> Our treatment method will not damage your furniture and bed.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--start-->
+        <h2>Rat Control</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home2">Service Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3">Benefits</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home2" class="container tab-pane active"><br>
+                <ul>
+                    <li>Chemical treatment will be done outside the area which is very effective.</li>
+                    <li> Inside the building on the corners we put powder which contains small amount of chemical, while rat move around the corners where power is applied, the chemical enters into their body as they breathe which cause internal bleeding then the rats gets exhausted and move out of the building which eventually dies.
+                    </li>
+                </ul>
+            </div>
+            <div id="menu3" class="container tab-pane fade"><br>
+
+                <ul>
+                    <li> Since rats will not die inside the building ,hygiene can be maintained.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- next Grid 1 
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <h1 class="w3-container w3-center">Bed Bugs Control<img class="logo" src="./images/Bedbug.png" alt="Pesto Doc" style="width:47px;height:44.5px; margin-left:10px"></h1>
+            <div class="row">
+                <div class="column" style="background: linear-gradient(to right, #66ffcc 0%, #99ff66 100%);">
+                    <h2>Service Details</h2>
+                    <ul>
+                        <li>Experts do a thorough inspection of hiding spots of bed bugs and inject the areas with advanced chemicals.</li>
+                        <li>An odourless and harmless herbal liquid is put as a spot spray on the floor.</li>
+                        <li>We use vacuum cleaner to clear all the bugs from the bed.</li>
+                    </ul>
+                </div>
+                <div class="column" style="background: linear-gradient(to left, #66ffcc 0%, #99ff66 100%);">
+                    <h2>Benefits</h2>
+
+                    <ul>
+                        <li> It is highly effective and completely controls infestation of Bed bugs at guest room ensuring no bed bugs are found in the infected places post treatment.</li>
+                        <li> Our treatment method will not damage your furniture and bed.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div>
+            <h1 class="w3-container w3-center">Bed Bugs Control<img class="logo" src="./images/Bedbug.png" alt="Pesto Doc" style="width:47px;height:44.5px; margin-left:10px"></h1>
+            <div class="row">
+                <div class="column" style="background: linear-gradient(to right, #66ffcc 0%, #99ff66 100%);">
+                    <h2>Service Details</h2>
+                    <ul>
+                        <li>Experts do a thorough inspection of hiding spots of bed bugs and inject the areas with advanced chemicals.</li>
+                        <li>An odourless and harmless herbal liquid is put as a spot spray on the floor.</li>
+                        <li>We use vacuum cleaner to clear all the bugs from the bed.</li>
+                    </ul>
+                </div>
+                <div class="column" style="background: linear-gradient(to left, #66ffcc 0%, #99ff66 100%);">
+                    <h2>Benefits</h2>
+
+                    <ul>
+                        <li> It is highly effective and completely controls infestation of Bed bugs at guest room ensuring no bed bugs are found in the infected places post treatment.</li>
+                        <li> Our treatment method will not damage your furniture and bed.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding  w3-padding-64 w3-container">
+        <div>
+            <h1 class="w3-container w3-center">Rat Control<img class="logo" src="./images/rat.png" alt="Pesto Doc" style="width:53.5px;height:36px; margin-left:10px"></h1>
+            <div class="row">
+                <div class="column" style="background: linear-gradient(to right, #ffff00 0%, #99ff66 100%);height:190px">
+                    <h2>Service Details</h2>
+                    <ul>
+                        <li>Chemical treatment will be done outside the area which is very effective.</li>
+                        <li> Inside the building on the corners we put powder which contains small amount of chemical, while rat move around the corners where power is applied, the chemical enters into their body as they breathe which cause internal bleeding then the rats gets exhausted and move out of the building which eventually dies.
+                        </li>
+                    </ul>
+                </div>
+                <div class="column" style="background: linear-gradient(to left, #ffff00 0%, #99ff66 100%);height:190px">
+                    <h2>Benefits</h2>
+
+                    <ul>
+                        <li> Since rats will not die inside the building ,hygiene can be maintained.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Second Grid -->
+    <div class="w3-container w3-text-dark-gray w3-padding-64" style="background: linear-gradient(to top, #0066ff 0%, #00ffcc 100%);">
+        <div id="content">
+            <h1 class="w3-xlarge"><strong>Why should you choose
+ “The Pest Doc”?</strong></h1>
+            <ul>
+                <li>Experts in herbal Pest Control.</li>
+                <li>Eco Friendly.</li>
+                <li>ISO and WHO authorized chemicals.</li>
+                <li>No smell and No chemical poisoning.</li>
+                <li>We have experienced technicians.</li>
+                <li>Random audit for quality check.</li>
+                <li>Affordable Price.</li>
+                <li>Emergency after an hour service.</li>
+                <li>Quick and reliably with flexible scheduling to suit your needs.</li>
+                <li>Personalized treatment as well as prevention suggestion.</li>
+                <li>We guarantee 100% customer satisfaction</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- third-->
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+
+            <!--
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>--
+ </div>-->
+            <address style="padding-left:20px"><a href="mailto:infothepestdoc@gmail.com"><u>Write to us</u></a>.<br>
+The Pest Doc.<br>
+#-14, 3rd Floor, Unity Building<br>
+Wood Street, Ashok Nagar<br>
+Bengaluru-560025<br>
+</address>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
